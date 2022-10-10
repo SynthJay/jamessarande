@@ -8,9 +8,9 @@
     font-family: Cutin;
 }
 @font-face {
-    src: url(assets/font/Titania-Regular.ttf);
+    src: url(/assets/font/Titania-Regular.ttf);
     font-family: Titania;
-  }
+}
 
 /* Animations */
 
