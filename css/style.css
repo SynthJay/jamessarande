@@ -220,3 +220,70 @@ button.toggle-button svg:hover {
     transition: 0.4s;
     text-shadow: 4px 4px 12px #10abd582;
 }
+
+/* About me */
+section {
+    font-family: 'Comfortaa';
+    color: #fff;
+}
+section#about-me {
+    height: 50vh;
+    background: rgb(23 28 32);
+}
+section#tiles {
+    height: 50vh;
+    background: rgb(23 28 32);
+    padding: 0 15%;
+}
+.column {
+    float: left;
+    width: 50%;
+}
+.about-me-cont {
+    padding: 0 15%;
+    font-family: 'Comfortaa';
+    color: #fffbfb;
+}
+.header-cont h2 {
+    font-size: 3rem;
+}
+
+.header-cont p {
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.left{
+    width: 25%;
+}
+
+.middle{
+    width: 30%;
+}
+
+.right{
+    width: 30%;
+}
+
+.column1-class {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    border: 1px solid #338fb233;
+    padding: 20px;
+    border-radius: 7px;
+    transition: 0.4s;
+}
+
+.column:hover {
+    border: 1px solid #338fb2;
+    transition: 0.4s;
+}
+.about-col{
+    float: left;
+    width: 50%;
+}
+
