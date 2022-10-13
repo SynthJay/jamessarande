@@ -527,3 +527,7 @@ footer.footer {
     width: 200px;
     cursor: pointer;
 }
+.footer_text span {
+    font-family: 'Comfortaa';
+    color: #fff;
+}
