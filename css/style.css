@@ -125,7 +125,7 @@
     -moz-animation: BannerAnimate 11s ease infinite;
     animation: BannerAnimate 11s ease infinite;
     position: relative;
-    background-image: url("61a9e9ef3ba9724da70db167_Noise.png");
+    background-image: url("assets/img/61a9e9ef3ba9724da70db167_Noise.png");
     background-position: 0 0;
 }
 .banner:after {
@@ -220,6 +220,9 @@ button.toggle-button svg:hover {
     transition: 0.4s;
     text-shadow: 4px 4px 12px #10abd582;
 }
+section {
+    background: rgb(23 28 32);
+}
 
 /* About me */
 section {
@@ -231,13 +234,22 @@ section#about-me {
     background: rgb(23 28 32);
 }
 section#tiles {
-    height: 50vh;
     background: rgb(23 28 32);
-    padding: 0 15%;
+    padding: 3% 15%;
+    color: #FFFFFF80;
 }
 .column {
     float: left;
     width: 50%;
+}
+section#tiles p {
+    line-height: 1.4em;
+    padding-top: 15px;
+    transition: 0.4s;
+    font-size: 1.1rem;
+}
+section#tiles h2{
+    transition: 0.4s;
 }
 .about-me-cont {
     padding: 0 15%;
@@ -249,8 +261,9 @@ section#tiles {
 }
 
 .header-cont p {
-    font-size: 16px;
+    font-size: 1.3em;
     padding-top: 20px;
+    line-height: 1.7em; 
 }
 
 .left{
@@ -275,16 +288,75 @@ section#tiles {
     border: 1px solid #338fb233;
     padding: 20px;
     border-radius: 7px;
-    transition: 0.4s;
-    background-image: radial-gradient(circle farthest-corner at 125% -321%,rgb(20 87 108),rgba(193,24,34,0) 68%);
+    transition: 0.4s!important;
+    background-image: radial-gradient(circle farthest-corner at 76% -48%,#006a874f,rgb(193 24 34 / 0%) 68%);
 }
 
 .column:hover {
     border: 1px solid #338fb2;
     transition: 0.4s;
+    background-image: radial-gradient(circle farthest-corner at 76% -48%,#0587aa,rgb(193 24 34 / 0%) 68%);
 }
 .about-col{
     float: left;
     width: 50%;
 }
 
+.column:hover p {
+    color: #ffff;
+    transition: 0.4s;
+}
+
+.column:hover h2 {
+    color: #ffff;
+    transition: 0.4s
+}
+
+.row.tiles-head span {
+    letter-spacing: 8px;
+}
+
+h2.wid-head {
+    padding-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+/* My Works */
+section#sectionProjects {
+    color: #8b8e90;
+}
+.row.project-txt-cont {
+    padding: 3% 15%;
+}
+.row.project-txt-cont span {
+    font-size: 1.3rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.row.project-txt-cont h2 {
+    padding-top: 20;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 8px;
+}
+
+
+/* Footer */
+.footer{
+    background: rgb(23 28 32);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+footer.footer {
+    padding: 1.5em 5em;
+    border-top: 1px solid rgb(20 87 108 / 39%);
+}
+.footer img {
+    width: 200px;
+    cursor: pointer;
+}
