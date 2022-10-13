@@ -16,17 +16,17 @@
 
 /* Animations */
 
-  @-webkit-keyframes logoLeftAnim{
+@-webkit-keyframes logoLeftAnim{
     0%{-webkit-transform:translateX(0);transform:translateX(0)}
     20%{-webkit-transform:translate(-110%);transform:translate(-110%)}
     50%,to{-webkit-transform:translate(0);transform:translate(0)}
     }
-  @keyframes logoLeftAnim{
+@keyframes logoLeftAnim{
     0%{-webkit-transform:translateX(0);transform:translateX(0)}
     20%{-webkit-transform:translate(-110%);transform:translate(-110%)}
     50%,to{-webkit-transform:translate(0);transform:translate(0)}
     }
-  @-webkit-keyframes BannerAnimate {
+@-webkit-keyframes BannerAnimate {
     0%{background-position:0% 28%}
     50%{background-position:100% 73%}
     100%{background-position:0% 28%}
@@ -40,6 +40,34 @@
     0%{background-position:0% 28%}
     50%{background-position:100% 73%}
     100%{background-position:0% 28%}
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
 }
 /* Menu */
 .menu-wrapper {
@@ -127,6 +155,7 @@
     position: relative;
     background-image: url("assets/img/61a9e9ef3ba9724da70db167_Noise.png");
     background-position: 0 0;
+    animation: myAnim 6s ease 0s infinite alternate forwards;
 }
 .banner:after {
     content: " ";
@@ -141,6 +170,7 @@
     -webkit-animation: BannerAnimate 11s ease infinite;
     -moz-animation: BannerAnimate 11s ease infinite;
     animation: BannerAnimate 11s ease infinite;
+    animation: myAnim 6s ease 0s infinite alternate both;
 }
 .header__hero--heading-gradient {
     background: linear-gradient(146deg, #0587aa, #9946f2, #338fb2, #9946f2);
@@ -158,6 +188,102 @@
     background-image: url("61a9e9ef3ba9724da70db167_Noise.png");
     background-position: 0 0;
 }
+/* Section Project Card */
+
+.section-projects .project-card {
+    width: 53%;
+    margin: auto auto;
+    background: -webkit-linear-gradient(top,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    background: linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
+    border: 0.2rem solid #20222e;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(54px);
+    backdrop-filter: blur(54px);
+    border-radius: 7.3rem;
+    display: flex;
+    align-items: center;
+    padding: 3rem 4rem;
+    position: relative;
+    justify-content: center;
+}
+.section-projects .project-card:before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    width: 15rem;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.section-projects .project-card:first-of-type:before {
+    background-image: url(assets/img/featuredphoto.png);
+}
+.section-projects .project-card__left {
+    margin-right: 2rem;
+}
+.section-projects .project-card__left h4 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-writing-mode: tb-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: tb-rl;
+    font-family: 'Comfortaa';
+    font-size: 1rem;
+    line-height: 92.4%;
+    letter-spacing: .19em;
+    color: #8b8b8b;
+    line-height: 120%;
+}
+.section-projects .project-card__middle {
+    width: 35rem;
+    height: 45rem;
+    background-size: cover;
+    position: relative;
+    border-radius: 5.3rem;
+    overflow: hidden;
+}
+.section-projects .project-card__middle img:first-child, .section-projects .project-card__middle img:nth-child(2)  {
+    width: 35rem;
+    height: 45rem;
+    background-size: cover;
+    position: relative;
+    border-radius: 5.3rem;
+    overflow: hidden;
+    object-fit: cover;
+}
+.section-projects .project-card__middle canvas {
+    position: absolute;
+    z-index: 0;
+    width: 100%!important;
+    height: 100%!important;
+}
+.section-projects .project-card__right {
+    margin-left: 2rem;
+}
+
+.section-projects .project-card__right h2 {
+    margin-bottom: 6rem;
+    font-family: 'Comfortaa';
+    font-size: 36px;
+}
+.section-projects .project-card:first-of-type a {
+    color: #9dc6f1;
+    font-size: 23px;
+    font-family: 'Comfortaa';
+    text-transform: lowercase;
+    letter-spacing: 3px;
+}
+.section-projects .project-card__socials {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5rem;
+}
+
 /* James CSS */
 /* James Menu */
 .navbar {
@@ -250,6 +376,7 @@ section#tiles p {
 }
 section#tiles h2{
     transition: 0.4s;
+    color: #ffff;
 }
 .about-me-cont {
     padding: 0 15%;
@@ -312,7 +439,13 @@ section#tiles h2{
     transition: 0.4s
 }
 
+    
+h2.wid-head {
+    font-size: 1.8em;
+}
+
 .row.tiles-head span {
+    font-size: 1.3em;
     letter-spacing: 8px;
 }
 
@@ -321,10 +454,32 @@ h2.wid-head {
     text-transform: uppercase;
     letter-spacing: 8px;
 }
+.tiles-cont:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 400;
+    left: -500;
+    width: 12%;
+    height: 0;
+    border-radius: 200px;
+    box-shadow: -16px 0px 292px 216px #10abd582;
+    -webkit-animation: BannerAnimate 11s ease infinite;
+    -moz-animation: BannerAnimate 11s ease infinite;
+    animation: BannerAnimate 11s ease infinite;
+    position: relative;
+    background-image: url(assets/img/61a9e9e…_Noise.png);
+    background-position: 0 0;
+    animation: myAnim 6s ease 0s infinite alternate both;
+}
+
+
 
 /* My Works */
+
 section#sectionProjects {
     color: #8b8e90;
+    padding: 5rem 0;
 }
 .row.project-txt-cont {
     padding: 3% 15%;
@@ -341,8 +496,20 @@ section#sectionProjects {
     font-weight: bold;
     font-size: 1.8rem;
     letter-spacing: 8px;
+    color: #fff;
 }
-
+.project-cont {
+    padding: 100px 0;
+}
+.distilling--heading-gradient {
+    background: linear-gradient(146deg, #fffbfb, #9dc6f1, #7795b4, #fffbfb);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: BannerAnimate 11s ease infinite;
+    -moz-animation: BannerAnimate 11s ease infinite;
+    animation: BannerAnimate 11s ease infinite;
+}
 
 /* Footer */
 .footer{
