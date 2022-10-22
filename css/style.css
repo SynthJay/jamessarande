@@ -69,6 +69,9 @@
 		transform: scale(1);
 	}
 }
+html{
+    scroll-behavior: smooth;
+}
 /* Menu */
 .menu-wrapper {
     position: fixed;
@@ -191,7 +194,7 @@
 /* Section Project Card */
 
 .section-projects .project-card {
-    width: 53%;
+    width: 50%;
     margin: auto auto;
     background: -webkit-linear-gradient(top,rgba(35,37,49,.5),rgba(15,15,24,.5));
     background: linear-gradient(180deg,rgba(35,37,49,.5),rgba(15,15,24,.5));
@@ -206,6 +209,7 @@
     padding: 3rem 4rem;
     position: relative;
     justify-content: center;
+    margin-bottom: 14rem;
 }
 .section-projects .project-card:before {
     content:"";
@@ -239,20 +243,23 @@
 }
 .section-projects .project-card__middle {
     width: 35rem;
-    height: 45rem;
+    height: 35rem;
     background-size: cover;
     position: relative;
     border-radius: 5.3rem;
     overflow: hidden;
+    display: flex;
 }
 .section-projects .project-card__middle img:first-child, .section-projects .project-card__middle img:nth-child(2)  {
     width: 35rem;
-    height: 45rem;
+    height: 35rem;
     background-size: cover;
     position: relative;
     border-radius: 5.3rem;
     overflow: hidden;
-    object-fit: cover;
+    object-fit: scale-down;
+    background: rgb(35 37 49 / 50%);
+    transition: 0.4s ease;
 }
 .section-projects .project-card__middle canvas {
     position: absolute;
@@ -268,13 +275,15 @@
     margin-bottom: 6rem;
     font-family: 'Comfortaa';
     font-size: 36px;
+    width: 13vw;
 }
-.section-projects .project-card:first-of-type a {
-    color: #9dc6f1;
+.section-projects .project-card a {
+    color: #8b8e90;
     font-size: 23px;
     font-family: 'Comfortaa';
     text-transform: lowercase;
     letter-spacing: 3px;
+    text-decoration: none;
 }
 .section-projects .project-card__socials {
     margin-top: 10rem;
@@ -313,6 +322,9 @@ button.toggle-button svg:hover {
     width: 40;
     transition: 0.4s;
 
+}
+.toggle-button-wrapper {
+    display: flex;
 }
 /* James Banner */
 .banner{
@@ -482,7 +494,7 @@ section#sectionProjects {
     padding: 5rem 0;
 }
 .row.project-txt-cont {
-    padding: 3% 15%;
+    padding: 5% 15%;
 }
 .row.project-txt-cont span {
     font-size: 1.3rem;
@@ -502,7 +514,7 @@ section#sectionProjects {
     padding: 100px 0;
 }
 .distilling--heading-gradient {
-    background: linear-gradient(146deg, #fffbfb, #9dc6f1, #7795b4, #fffbfb);
+    background: linear-gradient(146deg, #8b8e90, #9dc6f1, #7795b4, #8b8e90);
     background-size: 800% 800%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -510,6 +522,62 @@ section#sectionProjects {
     -moz-animation: BannerAnimate 11s ease infinite;
     animation: BannerAnimate 11s ease infinite;
 }
+.eateree--heading-gradient {
+    background: linear-gradient(146deg, #8b8e90, #d60024, #ff002b, #8b8e90);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: BannerAnimate 11s ease infinite;
+    -moz-animation: BannerAnimate 11s ease infinite;
+    animation: BannerAnimate 11s ease infinite;
+}
+.federal--heading-gradient {
+    background: linear-gradient(146deg, #8b8e90, #1c42c1, #063beb, #8b8e90);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: BannerAnimate 11s ease infinite;
+    -moz-animation: BannerAnimate 11s ease infinite;
+    animation: BannerAnimate 11s ease infinite;
+}
+a.project-card__link:after {
+    display: block;
+    content: "";
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background: var(--color-gray);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    border-top: 1px solid;
+    margin-top: 10px;
+}
+a.project-card__link:hover:after {
+    width: 100%;
+}
+.distill-link:hover {
+    color: #9dc6f1!important;
+}
+.eateree-link:hover{
+    color: #d60024!important;
+}
+.federal-link:hover{
+    color: #1c42c1!important;
+}
+
+.project-card__middle.distill-logo-cont img:hover {
+    background: #9dc6f1;
+    transition: 0.4s ease;
+}
+.project-card__middle.eateree-logo-cont img:hover {
+    background: hsla(350, 74%, 37%, 0.418);
+    transition: 0.4s ease;
+}
+.project-card__middle.federal-logo-cont img:hover {
+    background: #1c43c173;
+    transition: 0.4s ease;
+}
+
 
 /* Footer */
 .footer{
