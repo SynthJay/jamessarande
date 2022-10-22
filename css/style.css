@@ -235,7 +235,7 @@ html{
     -ms-writing-mode: tb-rl;
     writing-mode: tb-rl;
     font-family: 'Comfortaa';
-    font-size: 1rem;
+    font-size: .7rem;
     line-height: 92.4%;
     letter-spacing: .19em;
     color: #8b8b8b;
@@ -352,6 +352,7 @@ button.toggle-button svg:hover {
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
     text-transform: lowercase;
+    transition: 0.4s;
 }
 .header__hero--cta:hover{
     color:#fff;
@@ -544,7 +545,7 @@ a.project-card__link:after {
     display: block;
     content: "";
     left: 0;
-    width: 50%;
+    width: 25%;
     height: 1px;
     background: var(--color-gray);
     -webkit-transition: all .3s ease;
@@ -578,10 +579,40 @@ a.project-card__link:hover:after {
     transition: 0.4s ease;
 }
 
-
+/* Design Section */
+.row.design-row {
+    padding: 5% 15%;
+    background-image: radial-gradient(circle farthest-corner at 105% 62%,#0587aa,rgb(193 24 34 / 0%) 16%);
+}
+.row.row.design-row span{
+    font-size: 1.3rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #8b8e90;
+}
+.row.row.design-row h2{
+    padding-top: 20;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 8px;
+}
+.row.row.design-row h3{
+    font-size: 7rem;
+    text-align: -webkit-center;
+    padding: 10vh;  
+}
+.design-content p {
+    text-align-last: center;
+    letter-spacing: 8;
+    font-size: 1.3em;
+    color: #8b8e90;
+}
 /* Footer */
 .footer{
     background: rgb(23 28 32);
+}
+.footer-cont {
     display: flex;
     justify-content: space-between;
     align-content: center;

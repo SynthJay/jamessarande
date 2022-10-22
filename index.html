@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div data-scroll="true" data-scroll-sticky="true" data-scroll-target="#menu-target" class="menu-top is-inview">
+                        <div data-scroll="true" data-scroll-sticky="true" data-scroll-target="#menu-target" class="menu-top is-inview" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                             <a class="brand-logo" href="#">
                                 <img class="brand-logo__icon" src="assets/img/My Logo ver 3.1.png" alt="james logo icon">
                                 <span class="brand-logo__text-wrapper">
@@ -71,13 +71,12 @@
             <div class="banner">
                 <div class="header">
                     <div class="header__hero">
-                        <div class="header__hero--heading" data-aos="fade-up"
-                        data-aos-duration="3000">
+                        <div class="header__hero--heading" data-aos="fade-up" data-aos-duration="1000">
                             <span>creating, innovating, reinventing</span><br>
                             <span>ideas into </span>
                             <span class="header__hero--heading-gradient">reality<!-- --> </span><br>
                             <span>is my calling.</span>
-                        </div><a data-scroll-to="true" class="header__hero--cta" href="#sectionProjects">VIEW PROJECTS</a>
+                        </div><a data-scroll-to="true" class="header__hero--cta" data-aos="fade-up" data-aos-duration="1000" href="#sectionProjects">VIEW PROJECTS</a>
                     </div>
                 </div>
             </div> 
@@ -85,7 +84,7 @@
 
         <section id="about-me">
             <div class="about-me-cont">
-                <div class="row">
+                <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                     <div class="about-col aboutme-img-cont">
                         <img src="assets/img/featuredphoto.png" alt="">
                     </div>
@@ -98,20 +97,20 @@
         
         <section id="tiles">
             <div class="tiles-cont">
-                <div class="row tiles-head">
+                <div class="row tiles-head" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <span>WHAT I DO?</span>
                     <h2 class="wid-head">Here are some of my expertise</h2>
                 </div>
-                <div class="row column1-class">
+                <div class="row column1-class" data-aos="fade-up" data-aos-duration="1000">
                     <div class="column left">
                         <h2>Web Development</h2>
                         <p>I am a full-time Web Developer using Wordpress. I have experience in creating Informative and Ecommerce Websites using HTML, CSS, Javascript, and PHP.</p>
                     </div>
-                    <div class="column middle">
+                    <div class="column middle" data-aos="fade-up" data-aos-duration="1300">
                         <h2>Graphic Design</h2>
                         <p>My first love design, most of my experience I always find myself on the creative part of projects or things that I'm involved with. I have a decent knowledge of the creative tools that are available in the Industry.</p>
                     </div>
-                    <div class="column right">
+                    <div class="column right" data-aos="fade-up" data-aos-duration="1800">
                         <h2>Other Interest</h2>
                         <p>I also find myself getting knowledge outside of my comfort zone. I have plenty of experience in web hosting, analytics, SEO, and also giving tips and tricks to my colleagues.</p>
                     </div>
@@ -119,17 +118,17 @@
             </div>
         </section>
 
-        <section id="sectionProjects" class="section-projects">
-            <div class="row project-txt-cont">
+        <section id="sectionProjects" class="section-projects" >
+            <div class="row project-txt-cont" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <span>Curious?</span>
                 <h2 class="project-header">Here are some of my works</h2>
             </div>
             <div class="project-cont">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
                     <div class="project-card__left">
-                        <h4 class="heading-4">WORDPRESS, DIVI WOOCOMERCE</h4>
+                        <h4 class="heading-4">WORDPRESS, DIVI WOOCOMERCE, CSS, PHP, JS</h4>
                     </div>
-                    <div class="project-card__middle distill-logo-cont" data-displacement="webp/myDistorsionImage.webp" >
+                    <div class="project-card__middle hover-switch distill-logo-cont" data-displacement="webp/myDistorsionImage.webp" >
                         <img src="assets/img/5-Star-Logo.png" alt="5star distilling site">
                     </div>
                     <div class="project-card__right">
@@ -138,9 +137,9 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
                     <div class="project-card__left">
-                        <h4 class="heading-4">WORDPRESS, DIVI WOOCOMERCE</h4>
+                        <h4 class="heading-4">WORDPRESS, DIVI WOOCOMERCE, CSS, PHP, JS</h4>
                     </div>
                     <div class="project-card__middle eateree-logo-cont" data-displacement="webp/myDistorsionImage.webp">
                         <img src="assets/img/Eateree-Logo.png" alt="eateree site">
@@ -152,9 +151,9 @@
                 </div>
                 
 
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-duration="1000">
                     <div class="project-card__left">
-                        <h4 class="heading-4">WORDPRESS, DIVI WOOCOMERCE</h4>
+                        <h4 class="heading-4">WORDPRESS, DIVI, CSS, PHP, JS</h4>
                     </div>
                     <div class="project-card__middle federal-logo-cont" data-displacement="webp/myDistorsionImage.webp">
                         <img src="assets/img/Federal-Logo.png" alt="federal site">
@@ -167,20 +166,38 @@
             </div>
         </section>
 
-        <footer class="footer">
-            <div class="footer-img-cont" href="#">
-                <img src="assets/img/footerlogo.png" alt="james footer icon">
+        <section id="design-section" class="design-section">
+            <div class="row design-row" >
+                <div class="design">
+                    <div class="design-txt-cont" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <span>CHECK THIS OUT!</span>
+                        <h2>HERE ARE SOME OF MY WORKS AS A DESIGNER</h2>
+                    </div>
+                    <div class="design-content">
+                        <h3 data-aos="fade-up" data-aos-duration="1000">STAY TUNED!</h3>
+                        <p data-aos="fade-up" data-aos-duration="1800">MORE GOOD THINGS ARE ON THEIR WAY</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="footer_text">
-                <span>© 2022 | Design and Developed by James Sarande</span>
-                <a href="" target="_blank" rel="noopener">
-                    <!-- <img src="s" alt=""> -->
-                </a>
-                <a href="" target="_blank" rel="noopener">
-                    <!-- <img src="" alt=""> -->
-                </a>
+        <footer class="footer">
+            <div class="footer-cont">
+                <div class="footer-img-cont" href="#">
+                    <img src="assets/img/footerlogo.png" alt="james footer icon">
+                </div>
+    
+                <div class="footer_text">
+                    <span>© 2022 | Design and Developed by James Sarande</span>
+                    <a href="" target="_blank" rel="noopener">
+                        <!-- <img src="s" alt=""> -->
+                    </a>
+                    <a href="" target="_blank" rel="noopener">
+                        <!-- <img src="" alt=""> -->
+                    </a>
+                </div>
             </div>
+            
         </footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script type = "text/javascript" src="js/script.js"></script>
