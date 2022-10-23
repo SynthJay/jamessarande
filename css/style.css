@@ -69,6 +69,22 @@
 		transform: scale(1);
 	}
 }
+@-webkit-keyframes dawnanim {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@-moz-keyframes dawnanim {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+@keyframes dawnanim {
+    0%{background-position:51% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:51% 0%}
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -127,7 +143,7 @@ html{
 .header {
     grid-column: 2/14;
     padding-top: 19rem!important;
-    padding: 0px 19rem;
+    padding: 0px 10vw;
 }
 /* Banner */
 .body{
@@ -312,8 +328,9 @@ img.brand-logo__text{
 }
 button.toggle-button {
     background: transparent;
-    border: none;
+    border: none!important;
     cursor: pointer;
+    padding: 0;
 }
 button.toggle-button svg{
     transition: 0.4s;
@@ -341,7 +358,7 @@ button.toggle-button svg:hover {
     transition: 0.4s;
 }
 .header__hero--cta {
-    margin-top: 4rem;
+    margin-top: 14rem;
     display: inline-block;
     font-size: 1.8rem;
     line-height: 92.4%;
@@ -352,12 +369,16 @@ button.toggle-button svg:hover {
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
     text-transform: lowercase;
-    transition: 0.4s;
+    border: 1px solid #006A88;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s ease;
 }
 .header__hero--cta:hover{
     color:#fff;
-    transition: 0.4s;
+    transition: 0.4s ease;
     text-shadow: 4px 4px 12px #10abd582;
+    background-color: #0586aa15;
 }
 section {
     background: rgb(23 28 32);
@@ -371,6 +392,7 @@ section {
 section#about-me {
     height: 50vh;
     background: rgb(23 28 32);
+    padding: 5% 15%;
 }
 section#tiles {
     background: rgb(23 28 32);
@@ -392,7 +414,6 @@ section#tiles h2{
     color: #ffff;
 }
 .about-me-cont {
-    padding: 0 15%;
     font-family: 'Comfortaa';
     color: #fffbfb;
 }
@@ -486,6 +507,24 @@ h2.wid-head {
     animation: myAnim 6s ease 0s infinite alternate both;
 }
 
+h2.about-title {
+    font-size: 2.3em;
+    letter-spacing: 8px;
+    padding-bottom: 5rem;
+    font-weight: 900;
+    
+}
+
+.about-title-gradient{
+    background: linear-gradient(181deg, #0587aa, #8b8b8b, #ff7901);
+    background-size: 600% 600%;
+
+    -webkit-animation: dawnanim 43s ease infinite;
+    -moz-animation: dawnanim 43s ease infinite;
+    animation: dawnanim 15s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 /* My Works */
@@ -582,7 +621,7 @@ a.project-card__link:hover:after {
 /* Design Section */
 .row.design-row {
     padding: 5% 15%;
-    background-image: radial-gradient(circle farthest-corner at 105% 62%,#0587aa,rgb(193 24 34 / 0%) 16%);
+    background-image: radial-gradient(circle farthest-corner at 105% 50%,#0587aa,rgb(193 24 34 / 0%) 16%);
 }
 .row.row.design-row span{
     font-size: 1.3rem;
@@ -607,6 +646,50 @@ a.project-card__link:hover:after {
     letter-spacing: 8;
     font-size: 1.3em;
     color: #8b8e90;
+}
+/* Get in Touch*/
+section#contact-section {
+    padding: 3% 15%;
+}
+
+.contact-text-cont span {
+    font-size: 1.3em;
+    color: #8b8e90;
+    letter-spacing: 8;
+}
+
+.contact-text-cont h2 {
+    font-size: 3.8em;
+    padding: 30px 0;
+    color: #0587aa;
+    text-align: -webkit-center;
+}
+
+.contact-text-cont p {
+    font-size: 1.3rem;
+    text-align: -webkit-center;
+    line-height: 1.7em;
+}
+button {
+    background: none;
+    font-size: 1.3rem;
+    color: #fff;
+    font-family: 'Comfortaa';
+    padding: 20px;
+    border: 1px solid #006a88;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.contact-content {
+    text-align: center;
+}
+button:hover {
+    border: 1px solid #10abd5;
+    transition: 0.7s;
+    background: #0587aa12;
+}
+.contact-content p{
+    padding-bottom: 5rem;
 }
 /* Footer */
 .footer{
